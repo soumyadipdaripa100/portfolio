@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soumyadip Daripa</title>
+    <link href="image/SDlogo.png" type="img/icon" rel="icon">
+
+                <!-- Materialize CSS -->
+    
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    
+                <!--Import Google Icon Font-->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+          <!-----------------Fontawesome------------------>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    
+                <!--            FONTS               -->
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+                    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+    
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* width */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 2px red;
+            background: black;
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: darkred; 
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+          background: red;
+        }
+
+        body{
+            background-color: black;
+        }
+        
+        nav{
+            box-shadow: 0 1px 15px darkred;
+        }
+        .nav-items{
+            font-family: 'Charmonman';
+            font-weight: bolder;
+        }
+
+        .nav-items:hover{
+            color: red;
+        }
+        .navclick{
+            border-bottom: 1px darkred solid;
+            color: darkred;
+        }
+
+        #preloader{
+            background-color: black;
+            height: 100%;
+            -moz-height: 100%;
+            -o-height: 100%;
+            -webkit-height: 100%;
+            width: 100%;
+            -moz-width: 100%;
+            -o-width: 100%;
+            -webkit-width: 100%;
+        }
+
+        #logop{
+            height: 300px;
+            -moz-height: 300px;
+            -o-height: 300px;
+            -webkit-height: 300px;
+            width: 300px;
+            -moz-width: 300px;
+            -o-width: 300px;
+            -webkit-width: 300px;
+            border-top: 5px dotted #990000;
+            border-bottom: 5px dashed #660000;
+            border-left: 5px double darkred;
+            border-right: 5px solid red;
+            border-radius: 50%;
+            margin-top: 7%;
+            -moz-margin-top: 7%;
+            -o-margin-top: 7%;
+            -webkit-margin-top: 7%;
+            animation: spin 1s linear infinite;
+            background: transparent;
+        }
+
+
+        @keyframes spin
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        #loadingText{
+            font-family: '';
+            animation: glow 1s linear infinite;
+            color: burlywood;
+        }
+
+        @keyframes glow{
+            0%,100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+
+        .brand-logo{
+            color: darkred;
+            font-family: 'Unlock';
+        }
+        
+        #ronty{
+            height: 40px;
+            -moz-height: 40px;
+            -o-height: 40px;
+            -webkit-height: 40px;
+            width: 130px;
+            -moz-width: 130px;
+            -o-width: 130px;
+            -webkit-width: 130px;
+            margin-top: 11%;
+            -moz-margin-top: 11%;
+            -o-margin-top: 11%;
+            -webkit-margin-top: 11%;
+        }
+
+        #home{
+            background-image: url(image/PicsArt_07-24-08.21.35.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 90vh;
+            -moz-min-height: 90vh;
+            -o-min-height: 90vh;
+            -webkit-min-height: 90vh;
+        }
+
+        #homeimg{
+            height: 570px;
+            -moz-height: 570px;
+            -o-height: 570px;
+            -webkit-height: 570px;
+            width: 210px;
+            -moz-width: 210px;
+            -o-width: 210px;
+            -webkit-width: 210px;
+            margin-left: 27%;
+            -moz-margin-left: 27%;
+            -o-margin-left: 27%;
+            -webkit-margin-left: 27%;
+            margin-top: 4%;
+            -moz-margin-top: 4%;
+            -o-margin-top: 4%;
+            -webkit-margin-top: 4%;
+        }
+
+        #holah4{
+            font-family: 'Philosopher';
+            margin-left: 3%;
+        }
+
+        #im{
+            font-size: 1.5rem;
+            padding-top: 2%;
+        }
+
+        #namediv{
+            margin-top: 6%;
+        }
+        #name{
+            color: darkred;
+            font-weight: bolder;
+            font-family: 'Lobster';
+            margin-top: -0.5%;
+            display: inline-flex;
+        }
+
+        #web{
+            font-weight: 700;
+            font-family: 'Philosopher';
+            color: darkred;
+            margin-left: 9%;
+        }
+        #glass{
+            height: 50px;
+            -moz-height: 50px;
+            -o-height: 50px;
+            -webkit-height: 50px;
+            width: 110px;
+            -moz-width: 110px;
+            -o-width: 110px;
+            -webkit-width: 110px;
+            display: inline-flex;
+        }
+        .arrowdown{
+            margin-top: 11%;
+            animation: scrolldown 1s linear infinite;
+        }
+        @keyframes scrolldown{
+            0%{
+                opacity: 1;
+                margin-top: 11%;
+                transform: rotate(0deg);
+            }
+            100%{
+                opacity: 0;
+                margin-top: 12%;
+                transform: rotateY(360deg);
+            }
+        }
+        
+        #about{
+            min-height: 75vh;
+            -moz-min-height: 75vh;
+            -o-min-height: 75vh;
+            -webkit-min-height: 75vh;
+        }
+        .aboutme{
+            color: antiquewhite;
+            font-family: 'Spirax';
+            font-weight: bold;
+            margin-left: 10%;
+        }
+        
+        #abouth5{
+            font-family: inherit;
+            color: beige;
+            display: inline-flex;
+        }
+        #btnCV{
+            background: linear-gradient(black 50%,darkred);
+            transition: 1s;
+        }
+        #btnCV:hover{
+            background: linear-gradient(black 80%,darkred);
+            border-top: 1px solid darkred;
+        }
+        
+        #skills{
+            width: 100%;
+            -moz-width: 100%;
+            -o-width: 100%;
+            -webkit-width: 100%;
+            min-height: 100vh;
+            -moz-min-height: 100vh;
+            -o-min-height: 100vh;
+            -webkit-min-height: 100vh;
+        }
+        
+        .headingicon{
+            margin-top: 2%;
+            filter: blur(2px);
+        }
+        .heading{
+            font-family: 'Spirax';
+            font-weight: 500;
+        }
+        
+        .skillheading{
+            color: bisque;
+            font-family: serif;
+        }
+        
+        .skillbar{
+            width: 100%;
+            -moz-width: 100%;
+            -o-width: 100%;
+            -webkit-width: 100%;
+            background-color: aliceblue;
+            height: 2px;
+            -moz-height: 2px;
+            -o-height: 2px;
+            -webkit-height: 2px;
+            margin-top: 3%;
+        }
+        .highlightbar{
+            background-color: aqua;
+            height: 2px;
+            -moz-height: 2px;
+            -o-height: 2px;
+            -webkit-height: 2px;
+            position: relative;
+            border-radius: 2px;
+            box-shadow: 0 0 5px aqua;
+        }
+        .highlightbar:after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            -moz-height: 10px;
+            -o-height: 10px;
+            -webkit-height: 10px;
+            width: 10px;
+            -moz-width: 10px;
+            -o-width: 10px;
+            -webkit-width: 10px;
+            background-color: aqua;
+            border-radius: 50%;
+            left: 100%;
+            top: -150%;
+            box-shadow: 0 0 15px aqua;
+        }
+        .skillbarpercentage{
+            margin-top: 1%;
+            color: aquamarine;
+            font-family: serif;
+        }
+        
+        #projects{
+            min-height: 95vh;
+            -moz-min-height: 95vh;
+            -o-min-height: 95vh;
+            -webkit-min-height: 95vh;
+        }
+        .card-image img{
+            object-fit: contain;
+            height: 250px;
+            -moz-height: 250px;
+            -o-height: 250px;
+            -webkit-height: 250px;
+        }
+        .card-title{
+            font-family: 'Charmonman';
+        }
+        .projectbtn{
+            background: linear-gradient(to right,black 50%,darkred);
+            transition: background 1s linear;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        .projectbtn:hover{
+            background: linear-gradient(to left,black 40%,darkred);
+            border-right: 1px darkred solid;
+        }
+        .modalimg{
+            height: 95%;
+            -moz-height: 95%;
+            -o-height: 95%;
+            -webkit-height: 95%;
+            width: 80%;
+            -moz-width: 80%;
+            -o-width: 80%;
+            -webkit-width: 80%;
+        }
+        .lifesharemodalimg{
+            height: 114px;
+            -moz-height: 114px;
+            -o-height: 114px;
+            -webkit-height: 114px;
+            width: 25%;
+            -moz-width: 25%;
+            -o-width: 25%;
+            -webkit-width: 25%;
+        }
+        .modal-content h4{
+            color: snow;
+            font-family: 'Charmonman';
+        }
+        .modal-content h5{
+            color: darkred;
+        }
+        .modal-content p{
+            color: wheat;
+        }
+        .modal-close{
+            background-color: red;
+            transition: border 0.5s;
+        }
+        .modal-close:hover{
+            background-color: black;
+            color: aliceblue;
+            border: 1px solid red;
+        }
+        
+        #contact{
+            min-height: 90vh;
+            -moz-min-height: 90vh;
+            -o-min-height: 90vh;
+            -webkit-min-height: 90vh;
+        }
+        .btn-sent{
+            background: radial-gradient(darkred,black 90%);
+        }
+        .btn-sent:hover{
+            background: radial-gradient(darkred,black 70%);
+        }
+        
+        .socialul{
+            list-style: none;
+        }
+        .socialul li{
+            list-style: none;
+            height: 45px;
+            -moz-height: 45%;
+            -o-height: 45%;
+            -webkit-height: 45%;
+            width: 45px;
+            -moz-width: 45px;
+            -o-width: 45px;
+            -webkit-width: 45px;
+            margin-top: 12%;
+            text-align: center;
+            align-items: center;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .socialul li a i{
+            color: darkred;
+            padding-top: 8px;
+            transition: color 0.6s, background 1s;
+        }
+        .socialul li:hover{
+            background: linear-gradient(to top right,aqua -20%,darkred 70%);
+            color: black;
+        }
+        .socialul li:hover > a i{
+            color: black;
+        }
+        .nmbrmaildiv{
+            border-right: 1px solid darkred;
+        }
+        
+        .nmbrmaildiv i,#maildiv i{
+            text-shadow: 0 0 5px darkred,
+                         0 0 15px darkred,
+                         0 0 25px darkred;
+        }
+        .nmbrmail{
+            color: antiquewhite;
+        }
+        .flex{
+            display: inline-flex;
+        }
+        
+        
+                /*mobile*/
+        
+        @media only screen and (max-width: 600px){
+            #logop{
+                margin-top: 50%;
+                height: 150px;
+                -moz-height: 150px;
+                -o-height: 150px;
+                -webkit-height: 150px;
+                width: 150px;
+                -moz-width: 150px;
+                -o-width: 150px;
+                -webkit-width: 150px;
+            }
+            #loadingText{
+                font-family: 'Saira Stencil One', cursive;
+                font-size: 1.3rem;
+            }
+            #glass{
+                height: 30px;
+                -moz-height: 30px;
+                -o-height: 30px;
+                -webkit-height: 30px;
+                width: 80px;
+                -moz-width: 80px;
+                -o-width: 80px;
+                -webkit-width: 80px;
+                display: inline-block;
+                position: absolute;
+            }
+            #homeimg{
+                height: 350px;
+                -moz-height: 350px;
+                -o-height: 350px;
+                -webkit-height: 350px;
+                width: 150px;
+                -moz-width : 150px;
+                -o-width : 150px;
+                -webkit-width : 150px;
+                margin-left: 22%;
+            }
+            #namediv{
+                margin-top: 0;
+            }
+            #web{
+                margin-left: 0;
+                font-size: 20px;
+            }
+            .arrowdown{
+                margin-left: 40%;
+                animation: scrolldown 1s linear infinite;
+            }
+/*
+            #about{
+                height: 120vh;
+            }
+*/
+            #aboutimg{
+                width: 250px;
+                -moz-width: 250px;
+                -o-width: 250px;
+                -webkit-width: 250px;
+                height: 180px;
+                -moz-height: 180px;
+                -o-height: 180px;
+                -webkit-height: 180px;
+                margin-top: 18%;
+            }
+            .headingicon{
+                margin-top: 7%;
+            }
+            .ste{
+                font-size: 30px;
+            }
+            .stega{
+                margin-left: -25%;
+            }
+            .socialul{
+                margin-top: 5%;
+            }
+            .socialul li{
+                display: inline-flex;
+                list-style: none;
+                text-align: center;
+                align-items: center;
+                object-fit: cover;
+            }
+            .socialul li:nth-child(1){
+                padding-left: 5%;
+            }
+            .socialul li a i{
+                color: darkred;
+                transform: translate(35%,-5%);
+            }
+            #maildiv{
+                margin-top: 15%;
+            }
+            #mail{
+                font-size: 1rem;
+            }
+            .nmbrmaildiv{
+                border-right: 0;
+            }
+        }
+        
+        .modal{
+            border: solid 1px darkred;
+        }
+
+    
+    </style>
+    
+<body data-spy="scroll"  data-offset="50">
+    
+                        <!----------preloader------>
+    
+    <div id="preloader" style="display: block;">
+        <center>
+            <div id="logop"></div>
+            <br>
+            <h2 id="loadingText">Have some patience, Let it load...</h2>
+        </center>
+    </div>
+    
+    
+                        
+<div id="fullpage" style="display: none;">
+    
+    
+                        <!--------NAVBAR---------->
+    
+    
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="navbar-wrapper container">
+                <a href="" class="brand-logo"><img src="image/ronty.png" id="ronty"></a>
+<!--                <a href="#side-nav" class="sidenav-trigger left" data-target="#side-nav"><i class="material-icons yellow-text">menu</i></a>-->
+                <ul class="right hide-on-med-and-down" id="side-nav">
+                    <li><a href="#home" class="nav-items" id="homenav">Home</a></li>
+                    <li><a href="#projects" class="nav-items" id="projectnav">Projects</a></li>
+                    <li><a href="#contact" class="nav-items" id="contactnav">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!--
+    <div id="side-nav">
+        <ul class="sidenav center">
+            <li><a href="#home">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+    </div>
+-->
+        
+                        <!------------HOME------------>
+    
+    <section id="home" class="box">
+        <div class="row">
+            <div class="col l6 m6 s10 offset-s1">
+                <img src="image/PicsArt_10-15-11.59.18.png" id="homeimg">
+            </div>
+            <div class="col l6 m6 s10 offset-s1" id="namediv">
+                <h4 class="white-text" id="holah4">Hola</h4>
+                <p class="white-text" id="im">I am</p>
+                <div class="flex">
+                    <h1 id="name">Soumyadip Daripa</h1>
+                </div>
+                <div class="flex">
+                    <img src="image/glasses_PNG54313.png" id="glass">
+                </div>
+                <h5 id="web">Web <span class="highlight white-text">Developer</span> and<span class="highlight white-text"> Designer</span></h5>
+            </div>
+<!--
+            <div>
+                <a href="#skills" id="arrow"><i class="fas fa-angle-double-down medium arrowdown white-text"></i></a>
+            </div>
+-->
+        </div>
+        
+    </section>
+    
+                    <!------------------whatsapp------------------>
+    
+    
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green darken-2" href="https://api.whatsapp.com/send?phone=917699087109&amp;text=Hello%20Soumyadip%20&amp;source=&amp;data=" class="float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+      
+    
+                        <!------------ABOUT------------->
+    
+    <section class="box" id="about">
+        <h2 class="aboutme">About Me</h2>
+        <br>
+        <div class="row">
+            <div class="col l6 offset-l2 m7 offset-m2 s10 offset-s1">
+                <h5 id="abouth5">Web Developer and Designer</h5>
+                <i class="material-icons red-text small" style="margin-left: 2%;">devices</i>
+                <br><br>
+                <p class="white-text">Now I am persuing B.Tech degree in Computer Science and Engineering from Bengal Institue of Technology.<br><br>If you are thinking to make a website then I think I can help you with that...</p>
+                <br>
+                <a href="image/Soumyadip(CV).pdf" class="btn btn-large" id="btnCV" target="null">My CV<i class="material-icons white-text right">content_paste</i></a>
+            </div>
+            <div class="col l4 m3 s8 offset-s2">
+                <img src="image/14-2-web-design-png.png" id="aboutimg" class="responsive-img">
+            </div>
+        </div>
+    </section>
+    
+                        <!------------SKILLS------------>
+
+    <section class="box" id="skills">
+        <div class="row">
+            <div class="col l1 offset-l1 s1 m1 offset-m1 headingicon">
+                <i class="material-icons white-text medium">apps</i>
+            </div>
+            <div class="col l10 s9 offset-s2 m10">
+                <h3 class="white-text heading">My Skills</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col l5 offset-l1 m6 s8 offset-s2">
+                <div class="skill">
+                    <h5 class="skillheading">C</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 90%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 90%;">90%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">C++</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 85%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 85%;">85%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">Python</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 70%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 70%;">70%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">Java</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 0%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 0%;">0%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">HTML5</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 95%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 95%;">95%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">Javascript</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 80%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 80%;">80%</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col l5 m6 s8 offset-s2">
+                <div class="skill">
+                    <h5 class="skillheading">CSS3</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 85%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 85%;">85%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">Materialize CSS</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 95%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 95%;">95%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">Bootstrap</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 70%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 70%;">70%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">PHP</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 65%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 65%;">65%</p>
+                    </div>
+                </div>
+                <br>
+                <div class="skill">
+                    <h5 class="skillheading">My SQL</h5>
+                    <div class="skillbar">
+                        <div class="highlightbar" style="width: 90%;"></div>
+                        <p class="skillbarpercentage" style="margin-left: 90%;">90%</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        
+    </section>
+
+                        <!------------PROJECTS---------->
+
+    <section class="box" id="projects">
+        <div class="row">
+            <div class="col l1 offset-l1 s1 m1 offset-m1 headingicon">
+                <i class="material-icons white-text medium">apps</i>
+            </div>
+            <div class="col l10 s9 offset-s2 m10">
+                <h3 class="white-text heading">Projects</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+                    <!---------steganography card--------------->
+            
+            <div class="col l3 offset-l1 m4 offset-m2 s8 offset-s2">
+                <div class="card black">
+                    <div class="card-image">
+                        <img src="image/steganography.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title center white-text stega">STEGANOGRAPHY</h3>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#steganography" class="btn modal-trigger projectbtn">Know More</a>
+                    </div>
+                </div>
+            </div>
+                    <!---------Lifeshare card--------------->
+            
+            <div class="col l3 offset-l1 m4 offset-m2 s8 offset-s2">
+                <div class="card black">
+                    <div class="card-image">
+                        <img src="image/lifeshare.png">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title center white-text">LIFE SHARE</h3>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#lifeshare" class="btn modal-trigger projectbtn">Read More</a>
+                    </div>
+                </div>
+            </div>
+                    <!---------autobit card--------------->
+            
+            <div class="col l3 offset-l1 m4 offset-m2 s8 offset-s2">
+                <div class="card black">
+                    <div class="card-image">
+                        <img src="image/Autobit%20Logo%20with%20border.png">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title center white-text">AUTOBIT WEBSITE</h3>
+                    </div>
+                    <div class="card-action center">
+                        <a href="#autobit" class="btn modal-trigger projectbtn">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                    <!---------steganography modal--------------->
+        
+        <div id="steganography" class="modal black">
+            <div class="modal-content center">
+                <h4 class="center ste">STEGANOGRAPHY</h4>
+                <p>Windows Application</p>
+                <br>
+                <img src="image/encryption.JPG" class="center modalimg responsive-img">
+                <h5 class="center">Encryption</h5>
+                <p>In encrypter we have to take two images, in which the second image will be hidden inside the first image. After encryption you will not be able to differentiate between the first image and the encrypted image.</p>
+                <br>
+                <img src="image/decryption.JPG" class="center modalimg responsive-img">
+                <h5 class="center">Decryption</h5>
+                <p>We have to take the encrypted image in the decrypter and after pressing the decrypt button the hidden image will appear.</p>
+            </div>
+            <div class="modal-footer black">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat white-text">Close</a>
+            </div>
+        </div>
+        
+                    <!---------lifeshare modal--------------->
+        
+        <div id="lifeshare" class="modal black">
+            <div class="modal-content center">
+                <h4 class="center">LIFE SHARE</h4>
+                <p>Android Application</p>
+                <br>
+                <img src="image/ls_register.jpg" class="lifesharemodalimg responsive-img">
+                <img src="image/ls_login.jpg" class="lifesharemodalimg responsive-img">
+                <h5 class="center">Registration and Login page</h5>
+                <p>This is a blood donation app. Before starting the app either you have to log in or register.</p>
+                <br>
+                <img src="image/ls_main.jpg" class="lifesharemodalimg responsive-img">
+                <h5 class="center">Landing Page</h5>
+                <p>In this page you can see three buttons with three purposes. 'Request for blood' button is for requesting blood to others, there you have to fill a form with patient details. 'Nearby Requests' button is for searching the needy ones. You have to filter with your blood group, district and city, then you can contact with them if you are willing to donate blood. 'Available Donors' button is to see who are available to donate blood and if you need blood urgently, you may contact with them. There you have to filter again with the dropdowns to see people matchig with your blood group.</p>
+            </div>
+            <div class="modal-footer black">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat white-text">Close</a>
+            </div>
+        </div>
+        
+                    <!---------steganography modal--------------->
+        
+        <div id="autobit" class="modal black">
+            <div class="modal-content center">
+                <h4 class="center">AUTOBIT</h4>
+                <br>
+                <img src="image/autobit.JPG" class="center modalimg responsive-img">
+                <br>
+                <p>This is an official website of robotics club named Autobit of Bengal Institute of Technology. Check the link below</p>
+                <a href="http://autobit.cf">autobit.cf</a>
+            </div>
+            <div class="modal-footer black">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat white-text">Close</a>
+            </div>
+        </div>
+    </section>
+    
+                        <!------------CONTACT----------->
+
+    <section class="box" id="contact">
+        <div class="row">
+            <div class="col l1 offset-l1 s1 m1 offset-m1 headingicon">
+                <i class="material-icons white-text medium">apps</i>
+            </div>
+            <div class="col l10 s9 offset-s2 m10">
+                <h3 class="white-text heading">Contacts</h3>
+            </div>
+            <p class="white-text" style="margin-left: 20%;">Get in Touch</p>
+        </div>
+        <div class="row">
+            <form class="col s8 offset-s2 l5 offset-l1 m5 offset-m1" action="sms.php" method="post">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate white-text" name="firstName">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate white-text" name="lastName">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <input id="email" type="email" class="validate white-text" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="message" type="password" class="materialize-textarea white-text" name="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button class="btn right btn-sent" name="sent"><i class="material-icons white-text small left">send</i>Sent</button>
+            </form>
+            <div class="col l2 offset-l2 m2 offset-m2 s8 offset-s2 socialdiv">
+                <ul class="socialul">
+                    <li>
+                        <a href="http://facebook.com/soumyadip.daripa" target="null"><i class="fab fa-facebook-f small"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/soumyadipdaripa" target="null"><i class="fab fa-instagram small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/soumyadip-daripa-0454b6169" target="null"><i class="fab fa-linkedin-in small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/users/soumyadipdaripa100" target="null"><i class="fab fa-github small"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col l6 m6 s8 offset-s2 center nmbrmaildiv">
+                <i class="material-icons white-text small">phone</i>
+                <h5 class="nmbrmail">+91 7699087109 / +91 6295090570</h5>
+            </div>
+            <div class="col l6 m6 s8 offset-s2 center" id="maildiv">
+                <i class="material-icons white-text small ">markunread</i>
+                <h5><a href="mailto:soumyadip.daripa@gmail.com" target="null" class="nmbrmail" id="mail">soumyadipdaripa100@gmail.com</a></h5>
+            </div>
+        </div>
+    </section>
+    
+                        <!------------FOOTER----------->
+    <div id="footer" class="row">
+        <div class="col l6 offset-l3 m8 offset-m2 s10 offset-s1 center">
+            <p class="" style="color: darkgrey;">&copy; Soumyadip Daripa 2019</p>
+        </div>
+    </div>
+    
+
+</div>
+    
+    
+    
+    
+    
+    
+                    <!-----------script js------------->
+
+
+        <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        
+        $(window).on('load',function(){
+            $('#preloader').css('display','none');
+            $('#fullpage').css('display','block');
+        });
+        
+        $('#homenav').click(function(){
+            $path = $('#home').offset().top();
+            $('body').animate({scrollTop: $path},1000);
+        });
+        $('#projectnav').click(function(){
+            $path = $('#projects').offset().top();
+            $('body').animate({scrollTop: $path},1000);
+        });
+        $('#contctnav').click(function(){
+            $path = $('#contact').offset().top();
+            $('body').animate({scrollTop: $path},1000);
+        });
+        $('#arrow').click(function(){
+            $path = $('#skills').offset().top();
+            $('body').animate({scrollTop: $path},1000);
+        });
+        
+//        $('.sidenav-trigger').click(function(){
+//            $('#side-nav').slideToggle(500);
+//        });
+        var hola = ["Hola!|","Hola|","Hol|","Ho|","H|","|","H|","Ho|","Hol|","Hola|"];
+        var z = 0;
+        var holah4 = document.getElementById("holah4");
+
+        var func = setInterval(holafunc,500);
+        
+        function holafunc(){
+            if(z>=hola.length)
+                z = 0;
+            holah4.innerHTML = hola[z++];
+        };
+        $(document).ready(function(){
+            $('.tooltipped').tooltip();
+            $(".modal").modal();
+        });
+        
+    </script>
+
+</body>
+</html>
